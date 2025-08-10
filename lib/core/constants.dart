@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Constants {
-  static const Color ButtonColor = Color(0xFF3F80FF);
-  static const Color Buttoncover = Color(0xFFB2CCFF);
-  static const Color IconColor = Color(0x00001640);
+  static const Color buttonColor = Color(0xFF3F80FF);
+  static const Color buttoncover = Color(0xFFB2CCFF);
+  static const Color iconColor = Color(0xFF001640);
+  static const Color Textfeildborder = Color(0xFFB2CCFF);
   //Text
 }

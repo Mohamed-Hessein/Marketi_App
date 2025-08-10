@@ -1,6 +1,8 @@
 class ImageManager {
   static const String marktia_logo =
       'assets/images/47f188f4c9c80174c90ca39fa1e0305a96f33970.png';
+  static const String sliding_image1 =
+      'assets/images/Illustration_Onboarding_1@3x.png';
 
   static const String apple_icon = 'assets/images/Apple_Icon@3x.png';
   static const String arrow_down = 'assets/images/Arrow_Icon@3x.png';
@@ -17,7 +19,7 @@ class ImageManager {
   static const close_icon = 'assets/images/Close_Icons_UIA@3x.png';
   static const dark_mode_icon = 'assets/images/Dark_Mode_Icon@3x.png';
   static const delivery_icon = 'assets/images/Delivery_Icon@3x.png';
-  static const email_icon = 'assets/images/Email_Icon@2x.png';
+  static const email_icon = 'assets/images/Email_Icon.svg';
 
   static const fecebook_icon = 'assets/images/Facebok_Icon@3x.png';
   static const favoritue_icon = 'assets/images/Favorite&Icon.png';
@@ -43,8 +45,7 @@ class ImageManager {
 
   static const Log_In_Validation =
       'assets/images/Illustration_Log_In_Validation@3x.png';
-  static const Onboarding2 =
-      'assets/images/IllustrationOnboarding_Onboarding_2@3x.png';
+  static const Onboarding2 = 'assets/images/Illustration_Onboarding_2@3x.png';
   static const onboarding3 = 'assets/images/Illustration_Onboarding_3@3x.png';
   static const success_order =
       'assets/images/Illustration_Success_Order@3x.png';
@@ -63,13 +64,25 @@ class ImageManager {
 
   static const notification_icon = 'assets/images/Notification_Icon@3x.png';
 
-  static const password_icon = 'assets/images/Password_Icon@3x.png';
+  static const password_icon = 'assets/images/Password_Icon (1).png';
 
-  static const phone_icon = 'assets/images/Phone_Icon@3x.png';
+  static const phone_icon = 'assets/images/Phone_Icon.png';
 
   static const rating_icon = 'assets/images/Rate_Icon@3x.png';
 
   static const search_icon = 'assets/images/Search_Icons_UIA@3x.png';
   static const setting_icon = 'assets/images/Setting_Icon_UIA@3x.png';
   static const menu_icon = 'assets/images/Side_Menu_Icon@3x.png ';
+  static const star_icon = 'assets/images/Star_Icon@2x.png';
+  static const time_icon = 'assets/images/Time_Icon_UIA@2x.png';
+  static const user_icon = 'assets/images/User_Icon.png';
+  static const skip_Button = 'assets/images/Skip_Field.png';
+  static const emailtextField = 'assets/images/Email_Icon (1).png';
+  static const back_arrow = 'assets/images/Back_Icon.png';
+
+  static const name_icon = 'assets/images/Name_Icon (2).png';
+  static const String Verification_Code_With_Email =
+      'assets/images/Illustration_Verification_Code_With_Email.png';
+  static const String Illustration_Create_New_Password =
+      'assets/images/Illustration_Create_New_Password.png';
 }
