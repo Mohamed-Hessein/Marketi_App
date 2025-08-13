@@ -15,13 +15,12 @@ class SmoothWidget extends StatelessWidget {
       controller: controller,
       count: totalpage,
       effect: WormEffect(
-        dotHeight: 25,
-        dotWidth: 23,
+        dotHeight: 25.0,
+        dotWidth: 23.0,
         paintStyle: PaintingStyle.fill,
-        strokeWidth: 2,
+        strokeWidth: 2.0,
         activeDotColor: Color(0xFF001640),
-        spacing: 5,
-
+        spacing: 5.0,
         dotColor: Colors.grey,
         type: WormType.thinUnderground,
       ),
@@ -29,7 +28,6 @@ class SmoothWidget extends StatelessWidget {
         controller.animateToPage(
           index,
           duration: Duration(milliseconds: 500),
-
           curve: Curves.easeInOut,
         );
       },

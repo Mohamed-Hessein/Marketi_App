@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:marketia/core/constants.dart';
-import 'package:marketia/core/textstyles/styles.dart';
+import 'package:marketia/core/theme/constants.dart';
+import 'package:marketia/core/theme/textstyles/styles.dart';
 
 class Custtombuttonnext extends StatelessWidget {
   Custtombuttonnext({super.key, required this.onTap, required this.text});

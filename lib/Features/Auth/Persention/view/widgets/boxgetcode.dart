@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:marketia/core/constants.dart';
+import 'package:marketia/core/theme/constants.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class Pincodefeilds extends StatelessWidget {
-  const Pincodefeilds({super.key});
-
+  const Pincodefeilds({super.key, this.controller});
+  final controller;
   @override
   Widget build(BuildContext context) {
     return PinCodeTextField(
+      controller: controller,
       appContext: context,
       enableActiveFill: true,
       pinTheme: PinTheme(
-        fieldOuterPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 2),
         activeFillColor: Colors.transparent,
         selectedColor: Constants.Textfeildborder,
         disabledColor: Constants.Textfeildborder,
@@ -26,7 +26,7 @@ class Pincodefeilds extends StatelessWidget {
       ),
 
       cursorColor: Constants.Textfeildborder,
-      length: 4,
+      length: 6,
 
       animationType: AnimationType.fade,
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:marketia/core/constants.dart';
-import 'package:marketia/core/textstyles/styles.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:marketia/core/theme/constants.dart';
+import 'package:marketia/core/theme/textstyles/styles.dart';
 
 class CustomTextFeild extends StatelessWidget {
   const CustomTextFeild({
@@ -10,28 +11,37 @@ class CustomTextFeild extends StatelessWidget {
     required this.wigeth,
     required this.height,
     required this.labelText,
+    this.controler,
   });
-  final AssetImage assetImage;
+  final String assetImage;
   final String hintText;
   final String labelText;
   final double wigeth;
   final double height;
+  final controler;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 22),
       child: TextFormField(
+        controller: controler,
         decoration: InputDecoration(
           contentPadding: EdgeInsets.symmetric(vertical: 15, horizontal: 18),
           labelText: labelText,
           floatingLabelBehavior: FloatingLabelBehavior.always,
-          prefixIcon: Container(
-            width: wigeth,
-            height: height,
-            decoration: BoxDecoration(
-              image: DecorationImage(image: assetImage),
+          prefixIcon: Padding(
+            padding: const EdgeInsets.only(left: 5),
+            child: SizedBox(
+              height: 16,
+              width: 16,
+              child: SvgPicture.asset(
+                assetImage,
+                height: height,
+                width: wigeth,
+              ),
             ),
           ),
+          prefixIconConstraints: BoxConstraints(minWidth: 25, minHeight: 25),
           hintText: hintText,
           hintStyle: AppTextSyles.textpopns12Color,
           focusedBorder: OutlineInputBorder(
@@ -59,9 +69,11 @@ class CustomTextPhoneFeild extends StatelessWidget {
     required this.height,
     required this.SecassetImage,
     required this.labelText,
+    this.controler,
   });
-  final AssetImage assetImage;
-  final AssetImage SecassetImage;
+  final String assetImage;
+  final String SecassetImage;
+  final controler;
   final String hintText;
   final double wigeth;
   final String labelText;
@@ -71,6 +83,7 @@ class CustomTextPhoneFeild extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 22),
       child: TextFormField(
+        controller: controler,
         decoration: InputDecoration(
           contentPadding: EdgeInsets.symmetric(vertical: 15, horizontal: 18),
           labelText: labelText,
@@ -78,23 +91,24 @@ class CustomTextPhoneFeild extends StatelessWidget {
           prefixIcon: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Container(
+              SizedBox(
                 width: wigeth,
                 height: height,
-                decoration: BoxDecoration(
-                  image: DecorationImage(image: assetImage),
+                child: SvgPicture.asset(
+                  assetImage,
+                  height: height,
+                  width: wigeth,
                 ),
               ),
               SizedBox(width: 3),
-              Container(
+              SizedBox(
                 width: wigeth,
                 height: height,
-                decoration: BoxDecoration(
-                  image: DecorationImage(image: SecassetImage),
-                ),
+                child: SvgPicture.asset(SecassetImage),
               ),
             ],
           ),
+          prefixIconConstraints: BoxConstraints(minWidth: 25, minHeight: 25),
           hintText: hintText,
           hintStyle: AppTextSyles.textpopns12BlueforgotColor,
           focusedBorder: OutlineInputBorder(

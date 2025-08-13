@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:marketia/Features/OnBording/Persention/view/widgets/custtomButtonNext.dart';
 import 'package:marketia/Features/OnBording/Persention/view/widgets/smooth_widget.dart';
-import 'package:marketia/core/Textconst/textconst.dart';
-import 'package:marketia/core/image_manager/image_manager.dart';
-import 'package:marketia/core/textstyles/styles.dart';
+import 'package:marketia/core/constant/Textconst/textconst.dart';
+import 'package:marketia/core/constant/image_manager/image_manager.dart';
+import 'package:marketia/core/theme/textstyles/styles.dart';
 
 class Onbording2 extends StatelessWidget {
   const Onbording2({super.key, required this.controller});
@@ -17,7 +18,11 @@ class Onbording2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset(ImageManager.Onboarding2, height: 256, width: 344.3),
+            SvgPicture.asset(
+              ImageManager.onBoarding2,
+              width: 255.68360900878906,
+              height: 256,
+            ),
             SizedBox(height: 40),
             SmoothWidget(controller: controller, totalpage: 3),
             SizedBox(height: 24),
